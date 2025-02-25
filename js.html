@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/js.css">
+    <link rel="shortcut icon" href="imagens/logoicon.png" type="image/x-icon">
+    <title>JAVASCRIPT</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <a href="index.html"><img src="imagens/logo.png" id="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-contato">
+                    <a href="#"><button>CONTATO</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="html">
+        <img src="imagens/lg_javascript.png" alt="">
+        <div id="text">
+            <h1>O que é JAVASCRIPT?</h1>
+            <p>JavaScript é uma linguagem de programação amplamente usada para
+            criar interatividade em páginas da web. Ela permite que os
+            desenvolvedores criem funcionalidades dinâmicas, como animações,
+            validações de formulários, efeitos visuais e muito mais, tornando as
+            páginas da web mais dinâmicas e interativas. Além disso, JavaScript
+            também é utilizada em aplicativos web, servidores e até mesmo em
+            dispositivos IoT.</p>
+        </div>
+        
+    </div>
+
+
+
+
+    <div class="tags">
+
+        <div class="tag">
+            <h3>Declaração de variaveis:</h3>
+            <p>
+                Para declarar uma variável em JavaScript, você pode usar as palavras-chave var, let, ou const, dependendo do escopo e da 
+                mutabilidade que você deseja atribuir à variável.
+            </p>
+
+                <div id="h4">
+                    <h4>Exemplo de declaração <span>LET</span></h4>
+                </div>
+                <div id="exemplo">
+                    <p><span>let</span>  minhaVariavel = valor;</p>
+                </div>
+            <p>
+               - As variáveis declaradas com <strong>let</strong> têm escopo de bloco, o que significa que só são visíveis dentro do bloco onde foram
+                declaradas. Elas também não podem ser redeclaradas no mesmo escopo.
+
+            </p>
+
+            <div id="h4">
+                <h4>Exemplo de declaração <span>VAR</span></h4>
+            </div>
+            <div id="exemplo">
+                <p><span>var</span>  minhaVariavel = valor;</p>
+            </div>
+            <p>
+               - As variáveis declaradas com <strong>var</strong> têm escopo de função ou global, e podem ser redeclaradas e atualizadas.
+
+            </p>
+
+            <div id="h4">
+                <h4>Exemplo de declaração <span>CONST</span></h4>
+            </div>
+            <div id="exemplo">
+                <p><span>const</span>  minhaVariavel = valor;</p>
+            </div>
+            <p>
+               - As variáveis declaradas com <strong>const</strong> também têm escopo de bloco e não podem ser reatribuídas depois de declaradas. Isso não significa que o valor seja imutável, apenas que a referência à variável não pode ser alterada.
+            </p>
+
+        </div>
+         <p></p>
+        <div class="tag">
+            <h3>Operadores relacionais:</h3>
+            <p>
+                Em JavaScript, operadores relacionais são utilizados para comparar valores e produzir um resultado booleano, ou seja, 
+                verdadeiro (true) ou falso (false).
+            </p>
+            <p>
+                Operadores relacionais mais comuns:
+            </p>
+            <p id="igual">
+                Igualdade (==) e Desigualdade (!=): Esses operadores comparam dois valores e retornam verdadeiro se eles forem iguais (==)
+                ou diferentes (!=).
+            </p>
+
+            <div id="h4">
+                <h4>Exemplo de <span>IGUALDADE</span> e <span>DESIGUALDADE</span></h4>
+            </div>
+            <div id="exemplo2">
+                <p>var x = 5;</p>
+                <p>var y = 7;</p>
+                <p></p>
+                <p>console.log(x == y); <span>// false</span></p>
+                <p>console.log(x != y); <span>// true</span></p>
+            </div>
+
+            <p id="igual">
+                Maior que (>), Menor que (<), Maior ou igual (>=), Menor ou igual (<=): Esses operadores comparam números e retornam
+                verdadeiro ou falso, dependendo da relação entre eles.
+            </p>
+
+            <div id="h4">
+                <h4>Exemplo de <span>MAIOR</span>, <span>MENOR</span>, <span>MAIOR IGUAL</span> e <span>MENOR IGUAL</span></h4>
+            </div>
+            <div id="exemplo2">
+                <p>var c = 8;</p>
+                <p>var d = 6;</p>
+                <p></p>
+                <p>console.log(c > d); <span>// true</span></p>
+                <p>console.log(c < d); <span>// false</span></p>
+                <p>console.log(c >= d);  <span>// true</span></p>
+                <p>console.log(c <= d);  <span>// false</span></p>
+            </div>
+
+            <p id="igual">
+                Operador de Comparação de Tipo (typeof): Este operador retorna uma string indicando o tipo de dado de uma expressão.
+            </p>
+            <div id="h4">
+                <h4>Exemplo de <span>COMPARAÇÃO</span></h4>
+            </div>
+            <div id="exemplo2">
+                <p>var e = 10;</p>
+                <p>var f = "hello";</p>
+                <p></p>
+                <p>console.log(typeof e);  <span>// "number"</span></p>
+                <p>console.log(typeof f); <span>// "string"</span></p>
+                
+            </div>
+            <p id="txt">
+                Esses operadores relacionais são amplamente utilizados para comparar valores em JavaScript e são fundamentais para tomar 
+                decisões com base em condições em seus programas.
+            </p>
+
+        </div>
+        <p></p>
+        <div class="tag">
+            <h3>Operadores lógicos</h3>
+            <p>
+                Em JavaScript, assim como em muitas outras linguagens de programação, os operadores lógicos são utilizados para combinar 
+                expressões booleanas e produzir um resultado booleano. Os operadores lógicos mais comuns são:
+            </p>
+
+            <p></p>
+            <p></p>
+            <p><strong>AND (&&):</strong> Este operador retorna verdadeiro se ambas as expressões que ele conecta forem verdadeiras.</p>
+            <div id="h4">
+                <h4>Exemplo de <span>AND (&&)</span></h4>
+            </div>
+            <div id="exemplo2">
+                <p>var x = 5;</p>
+                <p>var y = 10;</p>
+                <p></p>
+                <p>console.log(x < 10 && y > 5);  <span>// true</span></p>
+                
+                
+            </div>
+
+            <p></p>
+            <p></p>
+            <p><strong>OR (||):</strong> Este operador retorna verdadeiro se pelo menos uma das expressões que ele conecta for verdadeira.</p>
+            <div id="h4">
+                <h4>Exemplo de <span>OR (||)</span></h4>
+            </div>
+            <div id="exemplo2">
+                <p>var a = 5;</p>
+                <p>var b = 3;</p>
+                <p></p>
+                <p>console.log(a == 5 || b == 5); <span>// true</span></p>
+                
+                
+            </div>
+
+            <p></p>
+            <p></p>
+            <p><strong>NOT (!):</strong> Este operador inverte o valor da expressão que ele precede, ou seja, se a expressão for verdadeira, ele retorna falso, e vice-versa.</p>
+            <div id="h4">
+                <h4>Exemplo de <span>NOT (!)</span></h4>
+            </div>
+            <div id="exemplo2">
+                <p>var c = 10;</p>
+                <p>var d = 20;</p>
+                <p></p>
+                <p>console.log(!(c === 10)); <span>// false</span></p>
+                <p>console.log(!(d === 20)); <span>// false</span></p>
+            </div>
+
+                <p>Estes operadores são frequentemente usados ​​em conjunto com as estruturas condicionais (if, else if, else) para controlar o
+                   fluxo do programa com base em diferentes condições.
+                </p>
+        </div>
+
+
+
+
+
+
+        <div class="tag">
+            <h3>Linkagem</h3>
+            <p>
+                Para linkar um arquivo JavaScript a um documento HTML, você pode usar a tag &lt;script&gt; no seu arquivo HTML. Aqui estão
+                algumas maneiras comuns de fazer isso:
+            </p>
+            <p></p>
+            <p>
+               <strong>Link Externo:</strong> Você pode vincular um arquivo JavaScript externo ao seu documento HTML usando o atributo src da tag
+                       &lt;script&gt;. Por exemplo:
+            </p>
+            <p></p>
+            <p></p>
+                <p>1. Crie um arquivo HTML:</p>
+            <div id="h4">
+                <h4><span>HTML</span></h4>
+            </div>
+            <div id="exemplo3">
+                <p>&lt;!DOCTYPE <span id="html3">html</span>&gt;</p>
+                <p>&lt;html <span id="rosa3">lang</span>=<span id="verde3">"pt-br"</span>&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p id="espaço">&lt;meta <span id="rosa3">charset</span>=<span id="verde3">"UTF-8"</span>&gt;</p>
+                <p id="espaço">&lt;meta <span id="rosa3">name</span>=<span id="verde3">"viewport"</span> <span id="rosa3">content</span>=<span id="verde3">"width=device-width, initial-scale=1.0"</span>&gt;</p>
+                <p id="espaço">&lt;title&gt;Minha Página&lt;/title&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+
+                <p id="espaço">&lt;h1&gt;Olá, mundo!&lt;/h1&gt;</p>
+                <p id="espaço">&lt;button&gt; <span id="rosa3">id</span>=<span id="verde3">"meuBotao"</span>&gt;Clique em mim &lt;/button&gt;</p>
+                <p></p>
+                <p></p>
+                <p id="espaço"><span id="cinza3">&lt;!-- Incluindo JavaScript externo --&gt;</span></p>
+                <p id="espaço">&lt;script <span id="rosa3">src</span>=<span id="verde3">"caminho/do/arquivo.js"</span>&gt;&lt;/script&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+                
+            </div>
+            <p></p>
+            <p></p>
+                <p>2. Crie um arquivo JavaScript (por exemplo, `script.js`):</p>
+            <div id="h4">
+                <h4><span>JavaScript</span></h4>
+            </div>
+            <div id="exemplo3">
+                <p><span id="rosa3">document</span>.<span id="vermelho3">getElementById</span>(<span id="verde3">'meuBotao'</span>).<span id="vermelho3">addEventListener</span>(<span id="verde3">'click'</span>,<span id="html3"> function</span>() {</p>
+                
+                <p id="espaço"><span id="vermelho3">alert</span>(<span id="verde3">'Botão clicado!'</span>);</p>
+                <p>});</p>
+                
+            </div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p>
+                <strong>Incluindo o JavaScript diretamente no arquivo HTML:</strong>
+            </p>
+            <p></p>
+                <p>1. Arquivo HTML com JavaScript embutido:</p>
+            <div id="h4">
+                <h4><span>HTML</span></h4>
+            </div>
+            <div id="exemplo3">
+                <p>&lt;!DOCTYPE <span id="html3">html</span>&gt;</p>
+                <p>&lt;html <span id="rosa3">lang</span>=<span id="verde3">"pt-br"</span>&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p id="espaço">&lt;meta <span id="rosa3">charset</span>=<span id="verde3">"UTF-8"</span>&gt;</p>
+                <p id="espaço">&lt;meta <span id="rosa3">name</span>=<span id="verde3">"viewport"</span> <span id="rosa3">content</span>=<span id="verde3">"width=device-width, initial-scale=1.0"</span>&gt;</p>
+                <p id="espaço">&lt;title&gt;Minha Página&lt;/title&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+
+                <p id="espaço">&lt;h1&gt;Olá, mundo!&lt;/h1&gt;</p>
+                <p id="espaço">&lt;button&gt; <span id="rosa3">id</span>=<span id="verde3">"meuBotao"</span>&gt;Clique em mim &lt;/button&gt;</p>
+                <p></p>
+                <p></p>
+                <p id="espaço"><span id="cinza3">&lt;!-- JavaScript embutido --&gt;</span></p>
+                <p id="espaço">&lt;script&gt;</p> 
+                <p id="espaço2"><span id="rosa3">document</span>.<span id="vermelho3">getElementById</span>(<span id="verde3">'meuBotao'</span>).<span id="vermelho3">addEventListener</span>(<span id="verde3">'click'</span>,<span id="html3"> function</span>() {</p>
+                <p id="espaço3"><span id="vermelho3">alert</span>(<span id="verde3">'Botão clicado!'</span>);</p>
+                <p id="espaço2">});</p>
+                     
+                <p id="espaço">&lt;/script&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
